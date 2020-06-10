@@ -21,11 +21,11 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
 - [x] Todas as ações dos módulos devem ficar no script: modulo/acoes.php;
 - [x] As ações dos módulos retornarão uma sessão chamada "mensagem" que deve ser exibida logo abaixo do cabeçalho da administração;    
 - [x] Após exibir para o usuário o conteúdo da sessão "mensagem", realizar a destruição dela para não exibir novamente;    
-- [ ] Área de administração - gestão de cursos:
-    - [ ] listagem de cursos
-    - [ ] cadastro de cursos com upload de imagem
-    - [ ] exclusão de cursos
-    - [ ] atualização de cursos com upload de nova imagem
+- [x] Área de administração - gestão de cursos:
+    - [x] listagem de cursos
+    - [x] cadastro de cursos com upload de imagem
+    - [x] exclusão de cursos
+    - [x] atualização de cursos com upload de nova imagem
 - [x] Área de administração: login;
 - [x] Área de administração - controle de sessão;
 - [ ] Todo link de exclusão deve possuir uma confirmação do usuário antes de executar a ação, para não excluir sem querer.
