@@ -11,6 +11,7 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
 - [x] Criar a página de exibição da **História**;
 - [x] Realizar a codificação do script de envio de email na página **Fale conosco**;
 - [ ] Área de administração - gestão de História/Sobre;
+    - [ ] Aplicar editor wysiwyg no campo "descricao"
 - [x] Área de administração - gestão de Últimas publicações:
     - [x] listagem de publicações
     - [x] cadastro de publicações
