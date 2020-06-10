@@ -17,4 +17,22 @@ $(document).ready(function(){
         },
         errorClass: "is-invalid"
     });
+
+    $('#btn-enviar').click(function(event){
+        event.preventDefault();
+        var form = $(this).parents('form');
+        var formAction = form.attr('action') + '&jsonrequest=1';
+        if(form.valid()) {
+            $.ajax({
+                method: 'POST',
+                data: form.serialize(),
+                timeout: 15000,
+                dataType: 'json',
+                url: formAction,
+                success: function(retorno) {
+                    alert('Cadastro realizado com sucesso');
+                }
+            });
+        }
+    });
 });

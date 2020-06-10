@@ -5,7 +5,12 @@ if( $_SESSION['logado']!=true){
     exit();
 }
 require_once "../includes/conecta.php";
-require_once "includes/header.php";//faz a inclusão do arquivo de cabeçalho
+
+$jsonrequest = @$_GET['jsonrequest'];
+if (empty($jsonrequest) || @$jsonrequest != '1') {
+    require_once "includes/header.php";//faz a inclusão do arquivo de cabeçalho
+}
+
     if($_SESSION['mensagem']){
         echo $_SESSION['mensagem'];
         unset($_SESSION['mensagem']);
@@ -21,4 +26,7 @@ require_once "includes/header.php";//faz a inclusão do arquivo de cabeçalho
             require_once "arquivos/404.php";
         }
     }
-require_once "includes/footer.php";////faz a inclusão do arquivo de rodapé
+
+if (empty($jsonrequest) || @$jsonrequest != '1') {
+    require_once "includes/footer.php";////faz a inclusão do arquivo de rodapé
+}

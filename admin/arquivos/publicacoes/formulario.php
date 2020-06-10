@@ -34,7 +34,7 @@ if(is_numeric($id) && !empty($id)){
                 <textarea class="form-control" name="conteudo" id="conteudo" placeholder="Digite o conteúdo da publicação"><?=trim($buscaPublicacao->conteudo)?></textarea>
             </div>
             <div class="mt-4 pb-4">
-                <button type="submit" class="btn btn-success"><?=$botao?> publicação</button>
+                <button type="submit" class="btn btn-success" id="btn-enviar"><?=$botao?> publicação</button>
                 <button type="reset" class="btn btn-danger">Limpar formulário</button>
             </div>
         </form>
