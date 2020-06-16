@@ -33,5 +33,6 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
 - [x] Área de administração: login;
 - [x] Área de administração - controle de sessão;
 - [ ] Todo link de exclusão deve possuir uma confirmação do usuário antes de executar a ação, para não excluir sem querer.
+- [ ] Adicionar as tabelas de listas um plugin de GRID. Sugestão: datatables
 - [ ] Hospedar a aplicação em um host virtual;
  
