@@ -29,8 +29,24 @@ $(document).ready(function(){
                 timeout: 15000,
                 dataType: 'json',
                 url: formAction,
-                success: function(retorno) {
-                    alert('Cadastro realizado com sucesso');
+                success: function(retorno) {             
+                    if (retorno['result'] == true) {                    
+                        $('#toast-cadastro .toast-header i').attr('class', 'fa fa-check text-success mr-1');
+                    } else {
+                        $('#toast-cadastro .toast-header i').attr('class', 'fas fa-times-circle text-danger mr-1');
+                    }
+                    //pegando a mensagem de retorno da requisição, pra colocar no toast
+                    $('#toast-cadastro .toast-body').html(retorno['mensagem']);
+                    $('#toast-cadastro').toast({
+                        autohide: true,
+                        delay: 10000
+                    }).toast('show');
+
+                    if(retorno['url'] != '' && retorno['url'].length > 6) {
+                        setTimeout(() => {
+                            window.location.href = retorno['url'];
+                        }, 2000);
+                    }
                 }
             });
         }

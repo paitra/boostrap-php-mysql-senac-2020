@@ -33,7 +33,7 @@ if($pagina=='publicacoes/acoes' && $_POST) {
             } else {
                 $retorno = array(
                     'result' => false,
-                    'mensagem' => 'Falha ao gravar'
+                    'mensagem' => 'Falha ao gravar, verifique seus dados e tente novamente'
                 );
                 $_SESSION['mensagem'] = '<div class="alert alert-danger">Falha ao gravar</div>';
             }
@@ -49,7 +49,7 @@ if($pagina=='publicacoes/acoes' && $_POST) {
             } else {
                 $retorno = array(
                     'result' => false,
-                    'mensagem' => 'Falha ao gravar'
+                    'mensagem' => 'Falha ao gravar, verifique seus dados e tente novamente'
                 );
                 $_SESSION['mensagem'] = '<div class="alert alert-danger">Falha ao gravar</div>';
             }
