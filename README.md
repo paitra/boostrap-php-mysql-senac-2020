@@ -32,7 +32,7 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
     - [ ] adicionar plugin de drop down na escolha do arquivo
 - [x] Área de administração: login;
 - [x] Área de administração - controle de sessão;
-- [ ] Todo link de exclusão deve possuir uma confirmação do usuário antes de executar a ação, para não excluir sem querer.
-- [ ] Adicionar as tabelas de listas um plugin de GRID. Sugestão: datatables
+- [ ] Todo link de exclusão deve possuir uma confirmação do usuário antes de executar a ação, para não excluir sem querer (sweetalert).
+- [ ] Adicionar as tabelas de listas um plugin de GRID (datatables).
 - [ ] Hospedar a aplicação em um host virtual;
  
