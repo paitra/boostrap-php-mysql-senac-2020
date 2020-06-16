@@ -33,8 +33,8 @@
                 <nav class="nav d-flex justify-content-between">
                     <a class="p-2 text-muted" href="index.php?pagina=publicacoes/listagem">Publicações</a>
                     <a class="p-2 text-muted" href="index.php?pagina=unidades">Unidades</a>
-                    <a class="p-2 text-muted" href="index.php?pagina=cursos">Cursos</a>
-                    <a class="p-2 text-muted" href="index.php?pagina=sobre">Sobre</a>
+                    <a class="p-2 text-muted" href="index.php?pagina=cursos/listagem">Cursos</a>
+                    <a class="p-2 text-muted" href="index.php?pagina=sobre/formulario">Sobre</a>
                 </nav>
             </div>
         </div>
