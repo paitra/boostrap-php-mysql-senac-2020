@@ -4,11 +4,18 @@ $id = @$_GET['id'];
 if(is_numeric($id) && !empty($id) && $_GET['acao']=="apagar"){
     mysqli_query($link,"DELETE FROM publicacao WHERE id=$id");
     if(mysqli_affected_rows($link)>0){
-        $_SESSION['mensagem'] = '<div class="alert alert-success">Publicação apagada com sucesso.</div>';
+        $retorno = array(
+            'result' => true,
+            'mensagem' => 'Publicação apagada com sucesso.'
+        );
     }else{
-        $_SESSION['mensagem'] = '<div class="alert alert-danger">Falha ao apagar</div>';
+        $retorno = array(
+            'result' => false,
+            'mensagem' => 'Falha ao apagar, atualize sua página.'
+        );
     }
-    header('Location:index.php?pagina=publicacoes/listagem');
+    
+    echo json_encode($retorno);
 }
 
 if($pagina=='publicacoes/acoes' && $_POST) {

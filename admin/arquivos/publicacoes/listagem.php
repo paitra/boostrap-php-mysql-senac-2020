@@ -27,7 +27,7 @@
                     <td><?= $rowPublicacoes->curso; ?></td>
                     <td><?= $rowPublicacoes->data; ?></td>
                     <td>
-                        <a class="btn btn-danger" href="index.php?pagina=publicacoes/acoes&acao=apagar&id=<?= $rowPublicacoes->id; ?>">Apagar</a>
+                        <a class="btn btn-danger btn-apagar" href="index.php?pagina=publicacoes/acoes&acao=apagar&id=<?= $rowPublicacoes->id; ?>">Apagar</a>
                         <a class="btn btn-info" href="index.php?pagina=publicacoes/formulario&id=<?= $rowPublicacoes->id; ?>">Alterar</a>
                     </td>
                 </tr>

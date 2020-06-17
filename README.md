@@ -23,6 +23,7 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
     - [x] Implementar validação de formulário via JS
     - [x] Envio de requisições via ajax
     - [x] Interação com o usuário através de Toasts
+    - [x] Link de exclusão com confirmação (sweetalert) e requisição via ajax
 - [x] Área de administração - reorganizar itens dentro de pastas, dividindo os módulos;
 - [x] Todas as ações dos módulos devem ficar no script: modulo/acoes.php;
 - [x] As ações dos módulos retornarão uma sessão chamada "mensagem" que deve ser exibida logo abaixo do cabeçalho da administração;    

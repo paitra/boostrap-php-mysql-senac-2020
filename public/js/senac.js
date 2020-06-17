@@ -51,4 +51,36 @@ $(document).ready(function(){
             });
         }
     });
+
+    $('.btn-apagar').click(function(event){
+        event.preventDefault();
+        let urlAction = $(this).attr('href') + '&jsonrequest=1';  
+        let btnApagar = $(this);
+
+        swal({
+            title: "Você tem certeza que deseja apagar?",
+            text: "Não é possível reverter esta operação!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+        .then((willDelete) => {
+            if (willDelete) {
+                $.ajax({
+                    method: 'GET',
+                    timeout: 15000,
+                    dataType: 'json',
+                    url: urlAction,
+                    success: function(retorno) { 
+                        if (retorno['result'] == true) {
+                            btnApagar.parents('tr').remove();
+                            swal(retorno['mensagem'], "", "success");
+                        } else {
+                            swal(retorno['mensagem'], "", "error");
+                        }
+                    }
+                });
+            }
+          });
+    });
 });
