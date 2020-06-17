@@ -11,6 +11,9 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
 - [x] Criar a página de exibição da **História**;
 - [x] Realizar a codificação do script de envio de email na página **Fale conosco**;
 - [ ] Área de administração - gestão de História/Sobre;
+    - [ ] Implementar validação de formulário via JS
+    - [ ] Envio de requisições via ajax
+    - [ ] Interação com o usuário através de Toasts
     - [ ] Aplicar editor wysiwyg no campo "descricao"
 - [x] Área de administração - gestão de Últimas publicações:
     - [x] listagem de publicações
@@ -19,7 +22,8 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
     - [x] atualização de publicações
     - [x] Implementar validação de formulário via JS
     - [x] Envio de requisições via ajax
-    - [ ] Interação com o usuário através de Toasts
+    - [x] Interação com o usuário através de Toasts
+    - [x] Link de exclusão com confirmação (sweetalert) e requisição via ajax
 - [x] Área de administração - reorganizar itens dentro de pastas, dividindo os módulos;
 - [x] Todas as ações dos módulos devem ficar no script: modulo/acoes.php;
 - [x] As ações dos módulos retornarão uma sessão chamada "mensagem" que deve ser exibida logo abaixo do cabeçalho da administração;    
@@ -29,6 +33,9 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
     - [x] cadastro de cursos com upload de imagem
     - [x] exclusão de cursos
     - [x] atualização de cursos com upload de nova imagem
+    - [ ] Implementar validação de formulário via JS
+    - [ ] Envio de requisições via ajax
+    - [ ] Interação com o usuário através de Toasts
     - [ ] adicionar plugin de drop down na escolha do arquivo
 - [x] Área de administração: login;
 - [x] Área de administração - controle de sessão;
