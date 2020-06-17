@@ -24,7 +24,10 @@
                 </a>
             </div>
             <div class="col-4 text-right">
-                <strong><?=$_SESSION['nome']?></strong><br>
+                <strong>
+                    <a href="index.php?pagina=usuario/formulario"><?=$_SESSION['nome']?>
+                    </a>
+                </strong><br>
                 <?=$_SESSION['email']?><br>
                 <a href="logout.php">Sair</a>
             </div>

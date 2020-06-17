@@ -25,7 +25,16 @@ if(is_numeric($id) && !empty($id)){
                 <input type="text" value="<?=$buscaPublicacao->aluno?>" class="form-control" name="aluno" id="aluno" placeholder="Digite o nome aluno">
             </div>
             <div class="form-group mb-3">
-                <input type="text" value="<?=$buscaPublicacao->curso?>" class="form-control" name="curso" id="curso" placeholder="Digite o nome do curso">
+                <select name="curso" class="form-control" required>
+                    <option value="">selecione o curso</option>
+                    <?php
+                        $cursos = mysqli_query($link,'SELECT * FROM curso ORDER BY titulo ASC');
+                        while($curso = mysqli_fetch_object($cursos)){
+                            echo '<option value="'.$curso->id.'" '.($buscaPublicacao->curso==$curso->id?"selected":null).'>'.$curso->titulo.'</option>';
+                        }
+                    ?>
+                </select>
+                <!--<input type="text" value="<?=$buscaPublicacao->curso?>" class="form-control" name="curso" id="curso" placeholder="Digite o nome do curso">-->
             </div>
             <div class="form-group mb-3">
                 <input type="date" value="<?=$buscaPublicacao->data?>" class="form-control col-12 col-md-5" name="data" id="data" placeholder="Selecione a data">

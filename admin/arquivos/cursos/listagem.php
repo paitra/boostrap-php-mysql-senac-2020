@@ -2,7 +2,7 @@
         <h2 class="display-5" id="title-table">Cursos</h2>
         <a href="index.php?pagina=cursos/formulario" class="btn btn-info">Cadastrar novo curso</a>
         <?php
-        $sqlCursos = mysqli_query($link, "SELECT * FROM curso ORDER BY titulo ASC");
+        $sqlCursos = mysqli_query($link, "SELECT *,(SELECT COUNT(id) FROM publicacao WHERE publicacao.curso=curso.id) as total FROM curso ORDER BY titulo ASC");
         if (mysqli_num_rows($sqlCursos) > 0) {
         ?>
         <table class="table mt-3">
@@ -25,13 +25,17 @@
                 <tr>
                     <th scope="row"><?= $x ?></th>
                     <td>
-                        <img src="../public/uploads/<?= $rowCursos->arquivo; ?>" width="150">
+                        <img src="../public/uploads/<?= $rowCursos->arquivo; ?>" width="80">
                     </td>
                     <td><?= $rowCursos->titulo; ?></td>
                     <td><?= $rowCursos->manchete; ?></td>
                     <td><?= $rowCursos->conteudo; ?></td>
                     <td>
+                        <?php
+                            if($rowCursos->total<1){
+                        ?>
                         <a class="btn btn-danger" href="index.php?pagina=cursos/acoes&acao=apagar&id=<?= $rowCursos->id; ?>">Apagar</a>
+                        <?php }?>
                         <a class="btn btn-info" href="index.php?pagina=cursos/formulario&id=<?= $rowCursos->id; ?>">Alterar</a>
                     </td>
                 </tr>
