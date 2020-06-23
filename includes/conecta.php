@@ -5,3 +5,5 @@ if (!$link) {
     echo "Falha ao conectar o servidor de banco de dados." . PHP_EOL;
     exit;
 }
+
+$chave = 'senac2020!';

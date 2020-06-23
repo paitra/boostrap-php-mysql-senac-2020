@@ -24,6 +24,8 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
     - [x] Envio de requisições via ajax
     - [x] Interação com o usuário através de Toasts
     - [x] Link de exclusão com confirmação (sweetalert) e requisição via ajax
+    - [x] trocar o campo de digitação do nome do curso para campo de seleção do curso com dados vindos da tabela cursos;
+    - [ ] Aplicar plugin no campo de seleção(chosen ou select2);
 - [x] Área de administração - reorganizar itens dentro de pastas, dividindo os módulos;
 - [x] Todas as ações dos módulos devem ficar no script: modulo/acoes.php;
 - [x] As ações dos módulos retornarão uma sessão chamada "mensagem" que deve ser exibida logo abaixo do cabeçalho da administração;    
@@ -39,7 +41,7 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
     - [ ] adicionar plugin de drop down na escolha do arquivo
 - [x] Área de administração: login;
 - [x] Área de administração - controle de sessão;
+- [x] Permitir modificação dos dados do usuário;
 - [ ] Todo link de exclusão deve possuir uma confirmação do usuário antes de executar a ação, para não excluir sem querer (sweetalert).
 - [ ] Adicionar as tabelas de listas um plugin de GRID (datatables).
-- [ ] Hospedar a aplicação em um host virtual;
- 
+- [ ] Hospedar a aplicação em um host virtual; 

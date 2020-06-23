@@ -2,7 +2,7 @@
         <h2 class="display-5" id="title-table">Últimas publicações</h2>
         <a href="index.php?pagina=publicacoes/formulario" class="btn btn-info">Cadastrar nova publicação</a>
         <?php
-        $sqlPublicacoes = mysqli_query($link, "SELECT * FROM publicacao ORDER BY aluno ASC");
+        $sqlPublicacoes = mysqli_query($link, "SELECT * FROM publicacao INNER JOIN curso ON curso.id=publicacao.curso ORDER BY aluno ASC");
         if (mysqli_num_rows($sqlPublicacoes) > 0) {
         ?>
         <table class="table mt-3">
@@ -24,7 +24,7 @@
                 <tr>
                     <th scope="row"><?= $x ?></th>
                     <td><?= $rowPublicacoes->aluno; ?></td>
-                    <td><?= $rowPublicacoes->curso; ?></td>
+                    <td><?= $rowPublicacoes->titulo; ?></td>
                     <td><?= $rowPublicacoes->data; ?></td>
                     <td>
                         <a class="btn btn-danger btn-apagar" href="index.php?pagina=publicacoes/acoes&acao=apagar&id=<?= $rowPublicacoes->id; ?>">Apagar</a>

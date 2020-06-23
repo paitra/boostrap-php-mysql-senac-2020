@@ -20,11 +20,12 @@
                echo '<div class="alert alert-danger">Preencha todos os campos</div>';
             }else{
                 require_once "../includes/conecta.php";
-               $busca = mysqli_query($link,"SELECT * FROM usuario WHERE email='$email' AND senha='$senha'");
+               $busca = mysqli_query($link,"SELECT * FROM usuario WHERE email='$email' AND senha='".(hash('sha512',$chave.$senha))."'");
                if(mysqli_num_rows($busca)>0){
                    $row = mysqli_fetch_object($busca);
                    session_start();
                    $_SESSION['logado'] = true;
+                   $_SESSION['id'] = $row->id;
                    $_SESSION['email'] = $row->email;
                    $_SESSION['nome'] = $row->nome;
                    header('Location:index.php');
