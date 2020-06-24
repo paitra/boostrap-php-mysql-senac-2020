@@ -8,6 +8,7 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
 - [x] Deixar a página **Inicial** dinâmica com exibição de dados vindos do banco de dados;
 - [x] Deixar a página **Cursos** dinâmica com exibição de dados vindos do banco de dados e imagens do diretório público;
     - [x] Criar a página de exibição do curso quando clicado em "Saiba Mais";
+    - [ ] Criar mecanismo de busca de cursos na página de listagem;
 - [x] Criar a página de exibição da **História**;
 - [x] Realizar a codificação do script de envio de email na página **Fale conosco**;
 - [ ] Área de administração - gestão de História/Sobre;
@@ -17,6 +18,7 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
     - [ ] Aplicar editor wysiwyg no campo "descricao"
 - [x] Área de administração - gestão de Últimas publicações:
     - [x] listagem de publicações
+        - [ ] Formatar a data para padrão brasileiro: dd/mm/AAAA
     - [x] cadastro de publicações
     - [x] exclusão de publicações
     - [x] atualização de publicações
