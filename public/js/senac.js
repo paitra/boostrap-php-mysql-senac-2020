@@ -83,4 +83,31 @@ $(document).ready(function(){
             }
           });
     });
+
+    $('table[data-toggle="data-tables"]').DataTable({
+        paging: true,
+        ordering: true,
+        order: [
+            [0, 'desc']
+        ],
+        columnDefs: [
+            { "orderable": false, "targets": 4 }
+        ],
+        lengthChange: true,
+        lengthMenu: [12, 24, 48, 96, 192],
+        pageLength: 12,
+        "language": {
+            "lengthMenu": "Mostrando _MENU_ registros",
+            "zeroRecords": "Desculpe, nenhum registro encontrado",
+            "info": "Exibindo _PAGE_ª de _PAGES_ páginas",
+            "infoEmpty": "Nenhum registro disponível",
+            "infoFiltered": "(filtrado de _MAX_ registros totais)",
+            "search": "Buscar:",
+            "paginate": {
+                "next":       "Próximo",
+                "previous":   "Anterior"
+            }
+        }
+        //dom: '<"row"<"col-sm-12 col-md-6"f><"col-sm-12 col-md-6"l>>rt<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>'
+    });
 });

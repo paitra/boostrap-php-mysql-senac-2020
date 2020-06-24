@@ -1,11 +1,11 @@
     <div class="table-responsive">
         <h2 class="display-5" id="title-table">Últimas publicações</h2>
-        <a href="index.php?pagina=publicacoes/formulario" class="btn btn-info">Cadastrar nova publicação</a>
+        <a href="index.php?pagina=publicacoes/formulario" class="btn btn-info mb-4">Cadastrar nova publicação</a>
         <?php
         $sqlPublicacoes = mysqli_query($link, "SELECT * FROM publicacao INNER JOIN curso ON curso.id=publicacao.curso ORDER BY aluno ASC");
         if (mysqli_num_rows($sqlPublicacoes) > 0) {
         ?>
-        <table class="table mt-3">
+        <table class="table table-striped" data-toggle="data-tables" style="width:100%">
             <thead>
             <tr>
                 <th scope="col">#</th>
