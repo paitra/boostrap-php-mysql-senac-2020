@@ -1,11 +1,11 @@
     <div class="table-responsive">
         <h2 class="display-5" id="title-table">Cursos</h2>
-        <a href="index.php?pagina=cursos/formulario" class="btn btn-info">Cadastrar novo curso</a>
+        <a href="index.php?pagina=cursos/formulario" class="btn btn-info mb-4">Cadastrar novo curso</a>
         <?php
         $sqlCursos = mysqli_query($link, "SELECT *,(SELECT COUNT(id) FROM publicacao WHERE publicacao.curso=curso.id) as total FROM curso ORDER BY titulo ASC");
         if (mysqli_num_rows($sqlCursos) > 0) {
         ?>
-        <table class="table mt-3">
+        <table class="table table-striped" data-toggle="data-tables" style="width:100%">
             <thead>
             <tr>
                 <th scope="col">#</th>
