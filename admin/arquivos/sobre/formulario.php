@@ -15,7 +15,7 @@
         <input type="text" value="<?=$buscaHistoria->titulo?>" class="form-control" name="titulo" placeholder="Digite o titulo">
     </div>
     <div class="input-group">
-        <textarea class="form-control" name="descricao" placeholder="Digite o descrição"><?=trim($buscaHistoria->descricao)?></textarea>
+        <textarea class="form-control" id="summernote" name="descricao" placeholder="Digite o descrição"><?=trim($buscaHistoria->descricao)?></textarea>
     </div>
     <div class="mt-4 pb-4">
         <button type="submit" class="btn btn-success"><?=$botao?></button>

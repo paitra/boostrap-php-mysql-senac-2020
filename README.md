@@ -8,17 +8,17 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
 - [x] Deixar a página **Inicial** dinâmica com exibição de dados vindos do banco de dados;
 - [x] Deixar a página **Cursos** dinâmica com exibição de dados vindos do banco de dados e imagens do diretório público;
     - [x] Criar a página de exibição do curso quando clicado em "Saiba Mais";
-    - [ ] Criar mecanismo de busca de cursos na página de listagem;
+    - [x] Criar mecanismo de busca de cursos na página de listagem;
 - [x] Criar a página de exibição da **História**;
 - [x] Realizar a codificação do script de envio de email na página **Fale conosco**;
 - [ ] Área de administração - gestão de História/Sobre;
     - [ ] Implementar validação de formulário via JS
     - [ ] Envio de requisições via ajax
     - [ ] Interação com o usuário através de Toasts
-    - [ ] Aplicar editor wysiwyg no campo "descricao"
+    - [x] Aplicar editor wysiwyg no campo "descricao"
 - [x] Área de administração - gestão de Últimas publicações:
     - [x] listagem de publicações
-        - [ ] Formatar a data para padrão brasileiro: dd/mm/AAAA
+        - [x] Formatar a data para padrão brasileiro: dd/mm/AAAA
     - [x] cadastro de publicações
     - [x] exclusão de publicações
     - [x] atualização de publicações
@@ -27,7 +27,7 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
     - [x] Interação com o usuário através de Toasts
     - [x] Link de exclusão com confirmação (sweetalert) e requisição via ajax
     - [x] trocar o campo de digitação do nome do curso para campo de seleção do curso com dados vindos da tabela cursos;
-    - [ ] Aplicar plugin no campo de seleção(chosen ou select2);
+    - [x] Aplicar plugin no campo de seleção(chosen ou select2);
 - [x] Área de administração - reorganizar itens dentro de pastas, dividindo os módulos;
 - [x] Todas as ações dos módulos devem ficar no script: modulo/acoes.php;
 - [x] As ações dos módulos retornarão uma sessão chamada "mensagem" que deve ser exibida logo abaixo do cabeçalho da administração;    
@@ -40,7 +40,7 @@ Projeto desenvolvido com os alunos do curso de programação para internet:
     - [ ] Implementar validação de formulário via JS
     - [ ] Envio de requisições via ajax
     - [ ] Interação com o usuário através de Toasts
-    - [ ] adicionar plugin de drop down na escolha do arquivo
+    - [x] adicionar plugin de drag and drop na escolha do arquivo
 - [x] Área de administração: login;
 - [x] Área de administração - controle de sessão;
 - [x] Permitir modificação dos dados do usuário;
