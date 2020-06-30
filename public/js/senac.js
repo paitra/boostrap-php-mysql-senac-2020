@@ -110,4 +110,29 @@ $(document).ready(function(){
         }
         //dom: '<"row"<"col-sm-12 col-md-6"f><"col-sm-12 col-md-6"l>>rt<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>'
     });
+
+    $('#summernote').summernote({
+        height: 250,
+        toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+    });
+    $("select").chosen(
+        {
+            disable_search_threshold: 2,
+            no_results_text: "Nada encontrado:"
+        }
+    );
+    $("input[type=file]").fileinput(
+        {
+            language:'pt-BR',
+            allowedFileExtensions: ['jpg', 'gif', 'png']
+        }
+    );
 });

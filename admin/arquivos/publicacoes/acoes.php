@@ -14,7 +14,6 @@ if(is_numeric($id) && !empty($id) && $_GET['acao']=="apagar"){
             'mensagem' => 'Falha ao apagar, atualize sua página.'
         );
     }
-    
     echo json_encode($retorno);
 }
 

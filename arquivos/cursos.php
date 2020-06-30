@@ -8,8 +8,28 @@
     </nav>
 </div>
 <div class="row">
+    <div class="col-12">
+        <div class="input-group mb-3">
+            <form method="POST" action="index.php?pagina=cursos" class="form-inline">
+                <input name="busca" type="text" class="form-control" placeholder="Digite sua busca">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row">
     <?php
-    $sqlCurso = mysqli_query($link, "SELECT * FROM curso GROUP BY titulo ASC");
+    $busca='';
+    if($_POST){
+        extract($_POST);
+        if(!empty($busca)){
+            $busca = " WHERE titulo LIKE '%$busca%' OR conteudo LIKE '%$busca%'";
+        }
+    }
+
+    $sqlCurso = mysqli_query($link, "SELECT * FROM curso $busca GROUP BY titulo ASC");
     if (mysqli_num_rows($sqlCurso) < 1) {
         echo '<div class="col"><div class="alert alert-info col">Nenhum curso cadastrado.</div></div>';
     } else {
