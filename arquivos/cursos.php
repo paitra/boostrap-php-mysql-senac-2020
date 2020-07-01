@@ -7,6 +7,20 @@
         </ol>
     </nav>
 </div>
+<!--ANTES
+<div class="row">
+    <div class="col-12">
+        <div class="input-group mb-3">
+            <form method="POST" action="index.php?pagina=cursos" class="form-inline">
+                <input name="busca" type="text" class="form-control" placeholder="Digite sua busca">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+-->
 <div class="row mb-3">
     <div class="col-12">
         <form method="POST" action="index.php?pagina=cursos" class="row">
@@ -19,6 +33,7 @@
         </form>
     </div>
 </div>
+
 <div class="row">
     <?php
     $busca='';
