@@ -7,16 +7,16 @@
         </ol>
     </nav>
 </div>
-<div class="row">
+<div class="row mb-3">
     <div class="col-12">
-        <div class="input-group mb-3">
-            <form method="POST" action="index.php?pagina=cursos" class="form-inline">
+        <form method="POST" action="index.php?pagina=cursos" class="row">
+            <div class="col-12 col-sm pr-sm-0">
                 <input name="busca" type="text" class="form-control" placeholder="Digite sua busca">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="submit">Buscar</button>
-                </div>
-            </form>
-        </div>
+            </div>
+            <div class="col-12 col-sm-auto pl-sm-0">
+                <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+            </div>
+        </form>
     </div>
 </div>
 <div class="row">
